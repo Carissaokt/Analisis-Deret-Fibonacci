@@ -1,0 +1,19 @@
+import matplotlib.pyplot as plt
+
+n_values = [10, 25, 30, 40, 50]
+recursive_times = [1, 912, 9459, 518811, 71946954]
+dynamic_times = [41, 9, 10, 7, 17]
+
+fig, ax = plt.subplots()
+
+ax.plot(n_values, recursive_times, label='Recursive')
+
+ax.plot(n_values, dynamic_times, label='Dynamic Programming')
+
+ax.set_title('Perbandingan Waktu Eksekusi')
+ax.set_xlabel('n')
+ax.set_ylabel('Waktu Eksekusi (microseconds)')
+
+ax.legend()
+
+plt.show()
